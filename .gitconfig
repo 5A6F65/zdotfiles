@@ -1,0 +1,40 @@
+[user]
+    name = Zoe
+    email = Zoe.Wick@outlook.com
+
+[init]
+	defaultBranch = main
+
+[core]
+    pager = delta
+    editor = code --wait
+
+[interactive]
+    diffFilter = delta --color-only
+
+[diff]
+    tool = vscode
+
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
+[merge]
+    tool = vscode
+    conflictstyle = diff3 # git version < 2.35
+    # conflictstyle = zdiff3
+
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+    keepBackup = false
+
+[delta]
+    navigate = true
+    line-numbers = true
+    side-by-side = true
+    syntax-theme = Coldark-Cold
+
+[alias]
+    # log oneline/full/detailed
+    lo = log --graph --all --decorate --pretty='format:%C(auto)%h %<(72,trunc)%s %C(brightcyan)%>>(14,trunc)%ar %C(brightgreen)%an%C(auto)% D%C(reset)'
+    lf = log --graph --all --decorate --stat --pretty='format:%C(auto)%H% D%C(reset)%nAuthor: %C(brightgreen)%an <%ae>%C(reset)%nDate:   %C(brightcyan)%ai (%ar)%C(reset)%nTitle:  %s%n%n%-b%n'
+    ld = log --stat --patch -1 --pretty='format:%C(auto)%H% D%C(reset)%nAuthor: %C(brightgreen)%an <%ae>%C(reset)%nDate:   %C(brightcyan)%ai (%ar)%C(reset)%nTitle:  %s%n%n%-b%n'
