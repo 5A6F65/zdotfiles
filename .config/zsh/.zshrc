@@ -19,6 +19,7 @@
     ) {
         [[ -f $__file && -r $__file ]] && source $__file
     }
+    return 0
 }
 
 # unsetopt XTRACE
