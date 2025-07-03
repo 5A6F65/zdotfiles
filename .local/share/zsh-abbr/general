@@ -1,0 +1,20 @@
+abbr 'c'='clear%'
+
+abbr 'pr'='print --'
+abbr 'pl'='print -l --'
+abbr 'pv'='print -l -- ${%}'
+
+abbr 'md'='mkdir'
+abbr 'mp'='mkdir -p'
+
+abbr 'zi'='zinit'
+abbr 'zu'='zinit update -a -q%'
+abbr 'zinit rp'='zinit report%'
+abbr 'zinit tm'='zinit times%'
+abbr 'zinit up'='zinit update -a -q%'
+
+abbr 'ez'='exec zsh%'
+
+abbr 'al'='abbr load%'
+
+abbr 'hf'='hyperfine -w3 -r20 '\''%'\'

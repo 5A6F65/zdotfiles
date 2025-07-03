@@ -1,0 +1,27 @@
+abbr 'a'='apt'
+
+abbr 'au'='sudo apt update && sudo apt upgrade%'
+abbr 'apt ud'='sudo apt update%'
+abbr 'apt up'='sudo apt upgrade%'
+abbr 'sudo apt ud'='sudo apt update%'
+abbr 'sudo apt up'='sudo apt upgrade%'
+
+abbr 'apt in'='sudo apt install'
+abbr 'sudo apt in'='sudo apt install'
+
+abbr 'apt rm'='sudo apt remove --purge'
+abbr 'sudo apt rm'='sudo apt remove --purge'
+
+abbr 'apt cl'='sudo apt clean%'
+abbr 'sudo apt cl'='sudo apt clean%'
+
+abbr 'apt ar'='sudo apt autoremove --purge%'
+abbr 'apt ac'='sudo apt autoclean%'
+abbr 'sudo apt ar'='sudo apt autoremove --purge%'
+abbr 'sudo apt ac'='sudo apt autoclean%'
+
+abbr 'apt ls'='apt list --installed%'
+
+abbr 'apt fd'='apt search'
+
+abbr 'apt si'='apt show'
