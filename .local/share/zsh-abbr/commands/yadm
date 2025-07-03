@@ -1,0 +1,26 @@
+abbr 'y'='yadm'
+
+abbr 'yadm ad'='yadm add'
+abbr 'yadm au'='yadm add -u%'
+abbr 'yadm ap'='yadm add -p%'
+
+abbr 'yadm rm'='yadm rm --cached -r'
+
+abbr 'yadm cm'='yadm commit'
+abbr 'yadm cv'='yadm commit -v%'
+abbr 'yadm ca'='yadm commit --amend -v%'
+
+abbr 'yadm df'='yadm diff%'
+abbr 'yadm dc'='yadm diff --cached%'
+abbr 'yadm ds'='yadm diff --staged%'
+abbr 'yadm dw'='yadm diff --word-diff%'
+abbr 'yadm dt'='yadm difftool%'
+
+abbr 'yadm st'='yadm status%'
+abbr 'yadm ss'='yadm status -s -b%'
+
+abbr 'yadm ps'='yadm push'
+abbr 'yadm po'='yadm push -u origin'
+abbr 'yadm pm'='yadm push -u origin main%'
+
+abbr 'yadm l'='yadm lo -n 10%'

@@ -1,0 +1,16 @@
+abbr 's'='snap'
+
+abbr 'snap up'='sudo snap refresh%'
+abbr 'sudo snap up'='sudo snap refresh%'
+
+abbr 'snap in'='sudo snap install'
+abbr 'sudo snap in'='sudo snap install'
+
+abbr 'snap rm'='sudo snap remove --purge'
+abbr 'sudo snap rm'='sudo snap remove --purge'
+
+abbr 'snap ls'='snap list --all%'
+
+abbr 'snap fd'='snap find'
+
+abbr 'snap si'='snap info'

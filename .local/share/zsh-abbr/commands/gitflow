@@ -1,0 +1,5 @@
+abbr 'gf'='git flow'
+abbr 'git f'='git flow'
+
+abbr 'git flow fs'='git flow feature start'
+abbr 'git flow ff'='git flow feature finish'
