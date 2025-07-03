@@ -1,0 +1,20 @@
+abbr 'a'='apt'
+
+abbr 'au'='apt update && apt upgrade%'
+abbr 'apt ud'='apt update%'
+abbr 'apt up'='apt upgrade%'
+
+abbr 'apt in'='apt install'
+
+abbr 'apt rm'='apt remove --purge'
+
+abbr 'apt cl'='apt clean%'
+
+abbr 'apt ar'='apt autoremove --purge%'
+abbr 'apt ac'='apt autoclean%'
+
+abbr 'apt ls'='apt list --installed%'
+
+abbr 'apt fd'='apt search'
+
+abbr 'apt si'='apt show'
