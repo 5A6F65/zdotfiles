@@ -5,8 +5,10 @@
     dir=${XDG_DATA_HOME:-$HOME/.local/share}/zsh-abbr
     [[ -d $dir ]] || return
 
-    if [[ $PREFIX == /data/data/com.termux/files/usr ]] {
-        files+=(commands/pkg)
+    if [[ $OSTYPE == linux-android ]] {
+        case ${${(s:/:)PREFIX}[3]} {
+            (com.termux) files+=(termux/apt) ;;
+        }
     } elif [[ -f /etc/os-release ]] {
         source /etc/os-release
         case $ID {
