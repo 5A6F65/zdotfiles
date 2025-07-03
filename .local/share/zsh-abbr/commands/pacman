@@ -1,0 +1,25 @@
+abbr 'p'='pacman'
+
+abbr 'pu'='sudo pacman -Syu%'
+abbr 'pacman up'='sudo pacman -Syu%'
+abbr 'sudo pacman up'='sudo pacman -Syu%'
+
+abbr 'pacman in'='pacman -S'
+abbr 'sudo pacman in'='pacman -S'
+
+abbr 'pacman rm'='pacman -Rs'
+abbr 'sudo pacman rm'='pacman -Rs'
+
+abbr 'pacman cl'='sudo pacman -Scc%'
+abbr 'sudo pacman cl'='sudo pacman -Scc%'
+
+abbr 'pacman ls'='pacman -Q%'
+abbr 'pacman lf'='pacman -Qf'
+
+abbr 'pacman fd'='pacman -Ss'
+
+abbr 'pacman si'='pacman -Si'
+
+abbr 'pacman lo'='pacman -Qdt' # list orphans
+abbr 'pacman ro'='sudo pacman -Rns $(pacman -Qtdq)' # remove orphans
+abbr 'sudo pacman ro'='sudo pacman -Rns $(pacman -Qtdq)'
