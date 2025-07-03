@@ -4,11 +4,11 @@ abbr 'pu'='sudo pacman -Syu%'
 abbr 'pacman up'='sudo pacman -Syu%'
 abbr 'sudo pacman up'='sudo pacman -Syu%'
 
-abbr 'pacman in'='pacman -S'
-abbr 'sudo pacman in'='pacman -S'
+abbr 'pacman in'='sudo pacman -S'
+abbr 'sudo pacman in'='sudo pacman -S'
 
-abbr 'pacman rm'='pacman -Rs'
-abbr 'sudo pacman rm'='pacman -Rs'
+abbr 'pacman rm'='sudo pacman -Rs'
+abbr 'sudo pacman rm'='sudo pacman -Rs'
 
 abbr 'pacman cl'='sudo pacman -Scc%'
 abbr 'sudo pacman cl'='sudo pacman -Scc%'
