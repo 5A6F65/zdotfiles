@@ -1,57 +1,75 @@
 abbr 'g'='git'
 
 abbr 'git ad'='git add'
-abbr 'git aa'='git add -a%'
+abbr 'git aa'='git add -A%'
 abbr 'git au'='git add -u%'
 abbr 'git ap'='git add -p%'
-
-abbr 'git rm'='git rm --cached -r'
 
 abbr 'git br'='git branch'
 abbr 'git ba'='git branch -a%'
 abbr 'git bd'='git branch -d'
 
-abbr 'git co'='git checkout'
-abbr 'git cb'='git checkout -b'
-abbr 'git checkout m'='git checkout main%'
 
 abbr 'git cm'='git commit'
 abbr 'git cv'='git commit -v%'
 abbr 'git ca'='git commit --amend -v%'
 abbr 'git commit v'='git commit -v%'
 abbr 'git commit m'='git commit -m "%"'
-abbr 'git commit w'='git commit -m WIP%'
 abbr 'git commit f'='git commit --fixup=%'
 abbr 'git commit a'='git commit --amend -v%'
 abbr 'git commit r'='git commit --amend --no-edit%'
 
+abbr 'git cl'='git clone'
+
+abbr 'git co'='git checkout'
+
 abbr 'git cp'='git cherry-pick'
 
 abbr 'git df'='git diff%'
-abbr 'git dc'='git diff --cached%'
 abbr 'git ds'='git diff --staged%'
-abbr 'git dw'='git diff --word-diff%'
 abbr 'git dt'='git difftool%'
 
+abbr 'git fe'='git fetch'
+
 abbr 'git mg'='git merge --no-ff'
+abbr 'git mf'='git merge --ff-only'
 abbr 'git mc'='git merge --continue%'
+abbr 'git ma'='git merge --abort%'
 abbr 'git mt'='git mergetool%'
 
-abbr 'git rb'='git rebase -i%'
-abbr 'git rc'='git rebase --continue%'
+abbr 'git rm'='git rm --cached -r'
 
-abbr 'git rs'='git reset'
-abbr 'git rh'='git reset --hard%'
+abbr 'git rb'='git rebase'
+abbr 'git rbi'='git rebase -i%'
+abbr 'git rbc'='git rebase --continue%'
+abbr 'git rba'='git rebase --abort%'
 
-abbr 'git ra'='git restore --staged .%'
+abbr 'git re'='git reset'
+abbr 'git reset h'='git reset --hard'
+abbr 'git reset s'='git reset --soft'
 
-abbr 'git st'='git status%'
+abbr 'git rw'='git restore -W'
+abbr 'git rs'='git restore -S'
+abbr 'git rf'='git restore -WS'
+
+abbr 'git st'='git status'
 abbr 'git ss'='git status -s -b%'
 
 abbr 'git sw'='git switch'
+abbr 'git sc'='git switch -c'
+
+abbr 'git sa'='git stash'
+abbr 'git stash s'='git stash save -u "%"'
+abbr 'git stash a'='git stash apply stash@{0%}'
+abbr 'git stash d'='git stash drop stash@{0%}'
+abbr 'git stash df'='git stash show -p stash@{0%}'
+abbr 'git stash ls'='git stash list%'
+abbr 'git stash cl'='git stash clear%'
 
 abbr 'git ps'='git push'
-abbr 'git po'='git push -u origin'
 abbr 'git pm'='git push -u origin main%'
 
-abbr 'git l'='git lo -n 10%'
+abbr 'git pl'='git pull'
+abbr 'git pr'='git pull --rebase'
+
+abbr 'git ln'='git lo -n 10%'
