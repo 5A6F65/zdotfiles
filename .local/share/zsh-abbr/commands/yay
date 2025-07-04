@@ -16,7 +16,9 @@ abbr 'yay fd'='pacman -Ss'
 
 abbr 'yay si'='pacman -Si'
 
-abbr 'yay lo'='yay -Qtd' # list orphans
-abbr 'yay ro'='yay -Rns $(yay -Qtdq)' # remove orphans
+# list orphans
+abbr 'yay lo'='yay -Qtd'
+# remove orphans
+abbr 'yay ro'='yay -Rns $(yay -Qtdq)'
 
 abbr 'yay cf'='	yay -Pg'
