@@ -7,13 +7,13 @@ abbr 'sudo pacman up'='sudo pacman -Syu%'
 abbr 'pacman in'='sudo pacman -S'
 abbr 'sudo pacman in'='sudo pacman -S'
 
-abbr 'pacman rm'='sudo pacman -Rs'
-abbr 'sudo pacman rm'='sudo pacman -Rs'
+abbr 'pacman rm'='sudo pacman -Rns'
+abbr 'sudo pacman rm'='sudo pacman -Rns'
 
 abbr 'pacman cl'='sudo pacman -Scc%'
 abbr 'sudo pacman cl'='sudo pacman -Scc%'
 
-abbr 'pacman ls'='pacman -Q%'
+abbr 'pacman ls'='pacman -Qe%'
 abbr 'pacman lf'='pacman -Qf'
 
 abbr 'pacman fd'='pacman -Ss'
