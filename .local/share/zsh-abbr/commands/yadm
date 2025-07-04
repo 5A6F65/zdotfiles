@@ -4,23 +4,47 @@ abbr 'yadm ad'='yadm add'
 abbr 'yadm au'='yadm add -u%'
 abbr 'yadm ap'='yadm add -p%'
 
-abbr 'yadm rm'='yadm rm --cached -r'
-
 abbr 'yadm cm'='yadm commit'
 abbr 'yadm cv'='yadm commit -v%'
 abbr 'yadm ca'='yadm commit --amend -v%'
 
+abbr 'yadm cl'='yadm clone'
+
+abbr 'yadm co'='yadm checkout'
+
 abbr 'yadm df'='yadm diff%'
-abbr 'yadm dc'='yadm diff --cached%'
 abbr 'yadm ds'='yadm diff --staged%'
-abbr 'yadm dw'='yadm diff --word-diff%'
 abbr 'yadm dt'='yadm difftool%'
 
-abbr 'yadm st'='yadm status%'
+abbr 'yadm fe'='yadm fetch'
+
+abbr 'yadm mg'='yadm merge --no-ff'
+abbr 'yadm mf'='yadm merge --ff-only'
+abbr 'yadm mc'='yadm merge --continue%'
+abbr 'yadm ma'='yadm merge --abort%'
+abbr 'yadm mt'='yadm mergetool%'
+
+abbr 'yadm rm'='yadm rm --cached -r'
+
+abbr 'yadm rb'='yadm rebase'
+abbr 'yadm rbi'='yadm rebase -i%'
+abbr 'yadm rbc'='yadm rebase --continue%'
+abbr 'yadm rba'='yadm rebase --abort%'
+
+abbr 'yadm rw'='yadm restore -W'
+abbr 'yadm rs'='yadm restore -S'
+abbr 'yadm rf'='yadm restore -WS'
+
+abbr 'yadm st'='yadm status'
 abbr 'yadm ss'='yadm status -s -b%'
 
+abbr 'yadm sw'='yadm switch'
+abbr 'yadm sc'='yadm switch -c'
+
 abbr 'yadm ps'='yadm push'
-abbr 'yadm po'='yadm push -u origin'
 abbr 'yadm pm'='yadm push -u origin main%'
 
-abbr 'yadm l'='yadm lo -n 10%'
+abbr 'yadm pl'='yadm pull'
+abbr 'yadm pr'='yadm pull --rebase'
+
+abbr 'yadm ln'='yadm lo -n 10%'
