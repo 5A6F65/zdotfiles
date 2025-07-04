@@ -13,7 +13,7 @@
         source /etc/os-release
         case $ID {
             (ubuntu|debian) files+=(commands/{apt,snap}) ;;
-            (arch) files+=(commands/pacman) ;;
+            (arch) files+=(commands/{pacman,yay}) ;;
         }
     }
     files+=(commands/{git,gitflow,yadm} general)
