@@ -1,4 +1,5 @@
-abbr 's'='snap'
+# Not worth it.
+# abbr 's'='snap'
 
 abbr 'snap up'='sudo snap refresh%'
 abbr 'sudo snap up'='sudo snap refresh%'
