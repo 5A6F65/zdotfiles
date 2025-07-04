@@ -20,6 +20,8 @@ abbr 'pacman fd'='pacman -Ss'
 
 abbr 'pacman si'='pacman -Si'
 
-abbr 'pacman lo'='pacman -Qdt' # list orphans
-abbr 'pacman ro'='sudo pacman -Rns $(pacman -Qtdq)' # remove orphans
+# list orphans
+abbr 'pacman lo'='pacman -Qdt'
+# remove orphans
+abbr 'pacman ro'='sudo pacman -Rns $(pacman -Qtdq)'
 abbr 'sudo pacman ro'='sudo pacman -Rns $(pacman -Qtdq)'
