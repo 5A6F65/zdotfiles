@@ -1,0 +1,22 @@
+# This abbreviation will conflict with yadm.
+# abbr 'y'='yay'
+
+abbr 'yu'='yay -Sua%'
+abbr 'yay up'='yay -Sua%'
+
+abbr 'yay in'='yay -S'
+
+abbr 'yay rm'='yay -Rns'
+
+abbr 'yay cl'='yay -Scc%'
+
+abbr 'yay ls'='yay -Qe%'
+
+abbr 'yay fd'='pacman -Ss'
+
+abbr 'yay si'='pacman -Si'
+
+abbr 'yay lo'='yay -Qtd' # list orphans
+abbr 'yay ro'='yay -Rns $(yay -Qtdq)' # remove orphans
+
+abbr 'yay cf'='	yay -Pg'
