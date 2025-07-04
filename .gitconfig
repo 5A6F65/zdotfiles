@@ -20,8 +20,7 @@
 
 [merge]
     tool = vscode
-    conflictstyle = diff3 # git version < 2.35
-    # conflictstyle = zdiff3
+    conflictstyle = zdiff3
 
 [mergetool "vscode"]
     cmd = code --wait $MERGED
