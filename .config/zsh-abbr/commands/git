@@ -47,7 +47,7 @@ abbr 'git pr'='git pull --rebase'
 abbr 'git rm'='git rm --cached -r'
 
 abbr 'git rb'='git rebase'
-abbr 'git rbi'='git rebase -i%'
+abbr 'git rbi'='git rebase -i'
 abbr 'git rbc'='git rebase --continue%'
 abbr 'git rba'='git rebase --abort%'
 

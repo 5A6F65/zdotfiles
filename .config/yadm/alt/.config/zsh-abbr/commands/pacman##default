@@ -1,0 +1,22 @@
+abbr 'p'='pacman'
+
+abbr 'pu'='pacman -Syu%'
+abbr 'pacman up'='pacman -Syu%'
+
+abbr 'pacman in'='pacman -S'
+
+abbr 'pacman rm'='pacman -Rns'
+
+abbr 'pacman cl'='pacman -Scc%'
+
+abbr 'pacman ls'='pacman -Qe%'
+abbr 'pacman lf'='pacman -Qf'
+
+abbr 'pacman fd'='pacman -Ss'
+
+abbr 'pacman si'='pacman -Si'
+
+# list orphans
+abbr 'pacman lo'='pacman -Qdt'
+# remove orphans
+abbr 'pacman ro'='pacman -Rns $(pacman -Qtdq)'

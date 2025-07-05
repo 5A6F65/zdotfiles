@@ -9,22 +9,27 @@
     [[ -d $data_dir ]] || mkdir -p $data_dir || return
     [[ ! -f $data_file ]] || rm $data_file || return
 
-    if [[ $OSTYPE == linux-android ]] {
-        case ${${(s:/:)PREFIX}[3]} {
-            (com.termux) config_files+=(termux/apt) ;;
-        }
-    } elif [[ -f /etc/os-release ]] {
-        source /etc/os-release
-        case $ID {
-            (ubuntu|debian) config_files+=(commands/{apt,snap}) ;;
-            (arch) config_files+=(commands/{pacman,yay}) ;;
-        }
+    # if [[ $OSTYPE == linux-android ]] {
+    #     case ${${(s:/:)PREFIX}[3]} {
+    #         (com.termux) ;;
+    #     }
+    # } elif [[ -f /etc/os-release ]] {
+    #     source /etc/os-release
+    #     case $ID {
+    #         (ubuntu|debian) ;;
+    #         (arch) ;;
+    #     }
+    # }
+
+    for config_file ($config_dir/commands/*(N)) {
+        (( ${+commands[${config_file:t}]} )) || continue
+        config_files+=($config_file)
     }
-    config_files+=(commands/{git,gitflow,yadm} misc)
+    config_files+=($config_dir/misc)
 
     for config_file ($config_files) {
-        [[ -f $config_dir/$config_file && -r $config_dir/$config_file ]] || continue
-        print -r -- "$(<$config_dir/$config_file)" >> $data_file
+        [[ -f $config_file && -r $config_file ]] || continue
+        print -r -- "$(<$config_file)" >> $data_file
     }
 
     ABBR_USER_ABBREVIATIONS_FILE=$data_file

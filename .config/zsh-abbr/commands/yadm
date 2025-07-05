@@ -35,7 +35,7 @@ abbr 'yadm pr'='yadm pull --rebase'
 abbr 'yadm rm'='yadm rm --cached -r'
 
 abbr 'yadm rb'='yadm rebase'
-abbr 'yadm rbi'='yadm rebase -i%'
+abbr 'yadm rbi'='yadm rebase -i'
 abbr 'yadm rbc'='yadm rebase --continue%'
 abbr 'yadm rba'='yadm rebase --abort%'
 

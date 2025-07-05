@@ -1,0 +1,14 @@
+# Not worth it.
+# abbr 's'='snap'
+
+abbr 'snap up'='snap refresh%'
+
+abbr 'snap in'='snap install'
+
+abbr 'snap rm'='snap remove --purge'
+
+abbr 'snap ls'='snap list --all%'
+
+abbr 'snap fd'='snap find'
+
+abbr 'snap si'='snap info'
