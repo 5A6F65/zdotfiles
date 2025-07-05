@@ -9,7 +9,6 @@ abbr 'git br'='git branch'
 abbr 'git ba'='git branch -a%'
 abbr 'git bd'='git branch -d'
 
-
 abbr 'git cm'='git commit'
 abbr 'git cv'='git commit -v%'
 abbr 'git ca'='git commit --amend -v%'
@@ -31,11 +30,19 @@ abbr 'git dt'='git difftool%'
 
 abbr 'git fe'='git fetch'
 
+abbr 'git ln'='git lo -n 10%'
+
 abbr 'git mg'='git merge --no-ff'
 abbr 'git mf'='git merge --ff-only'
 abbr 'git mc'='git merge --continue%'
 abbr 'git ma'='git merge --abort%'
 abbr 'git mt'='git mergetool%'
+
+abbr 'git ps'='git push'
+abbr 'git pm'='git push -u origin main%'
+
+abbr 'git pl'='git pull'
+abbr 'git pr'='git pull --rebase'
 
 abbr 'git rm'='git rm --cached -r'
 
@@ -65,11 +72,3 @@ abbr 'git stash d'='git stash drop stash@{0%}'
 abbr 'git stash df'='git stash show -p stash@{0%}'
 abbr 'git stash ls'='git stash list%'
 abbr 'git stash cl'='git stash clear%'
-
-abbr 'git ps'='git push'
-abbr 'git pm'='git push -u origin main%'
-
-abbr 'git pl'='git pull'
-abbr 'git pr'='git pull --rebase'
-
-abbr 'git ln'='git lo -n 10%'

@@ -18,11 +18,19 @@ abbr 'yadm dt'='yadm difftool%'
 
 abbr 'yadm fe'='yadm fetch'
 
+abbr 'yadm ln'='yadm lo -n 10%'
+
 abbr 'yadm mg'='yadm merge --no-ff'
 abbr 'yadm mf'='yadm merge --ff-only'
 abbr 'yadm mc'='yadm merge --continue%'
 abbr 'yadm ma'='yadm merge --abort%'
 abbr 'yadm mt'='yadm mergetool%'
+
+abbr 'yadm ps'='yadm push'
+abbr 'yadm pm'='yadm push -u origin main%'
+
+abbr 'yadm pl'='yadm pull'
+abbr 'yadm pr'='yadm pull --rebase'
 
 abbr 'yadm rm'='yadm rm --cached -r'
 
@@ -40,11 +48,3 @@ abbr 'yadm ss'='yadm status -s -b%'
 
 abbr 'yadm sw'='yadm switch'
 abbr 'yadm sc'='yadm switch -c'
-
-abbr 'yadm ps'='yadm push'
-abbr 'yadm pm'='yadm push -u origin main%'
-
-abbr 'yadm pl'='yadm pull'
-abbr 'yadm pr'='yadm pull --rebase'
-
-abbr 'yadm ln'='yadm lo -n 10%'

@@ -1,30 +1,33 @@
 () {
-    local dir file
-    local -a files
+    local config_dir config_file
+    local -a config_files
 
-    dir=${XDG_DATA_HOME:-$HOME/.local/share}/zsh-abbr
-    [[ -d $dir ]] || return
+    config_dir=${XDG_CONFIG_HOME:-$HOME/.config}/zsh-abbr
+    data_dir=${XDG_DATA_HOME:-$HOME/.local/share}/zsh-abbr
+    data_file=$data_dir/current
+    [[ -d $config_dir ]] || return
+    [[ -d $data_dir ]] || mkdir -p $data_dir || return
+    [[ ! -f $data_file ]] || rm $data_file || return
 
     if [[ $OSTYPE == linux-android ]] {
         case ${${(s:/:)PREFIX}[3]} {
-            (com.termux) files+=(termux/apt) ;;
+            (com.termux) config_files+=(termux/apt) ;;
         }
     } elif [[ -f /etc/os-release ]] {
         source /etc/os-release
         case $ID {
-            (ubuntu|debian) files+=(commands/{apt,snap}) ;;
-            (arch) files+=(commands/{pacman,yay}) ;;
+            (ubuntu|debian) config_files+=(commands/{apt,snap}) ;;
+            (arch) config_files+=(commands/{pacman,yay}) ;;
         }
     }
-    files+=(commands/{git,gitflow,yadm} general)
+    config_files+=(commands/{git,gitflow,yadm} misc)
 
-    rm -rf $dir/current
-    for file ($files) {
-        [[ -f $dir/$file && -r $dir/$file ]] || continue
-        print -r -- "$(<$dir/$file)" >> $dir/current
+    for config_file ($config_files) {
+        [[ -f $config_dir/$config_file && -r $config_dir/$config_file ]] || continue
+        print -r -- "$(<$config_dir/$config_file)" >> $data_file
     }
 
-    ABBR_USER_ABBREVIATIONS_FILE=$dir/current
+    ABBR_USER_ABBREVIATIONS_FILE=$data_file
 }
 
 ABBR_DEFAULT_BINDINGS=0
