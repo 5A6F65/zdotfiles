@@ -1,0 +1,11 @@
+abbr 'gf'='git flow'
+abbr 'git fl'='git flow'
+
+abbr 'git flow fs'='git flow feature start'
+abbr 'git flow ff'='git flow feature finish'
+
+abbr 'git flow rs'='git flow release start'
+abbr 'git flow rf'='git flow release finish'
+
+abbr 'git flow hs'='git flow hotfix start'
+abbr 'git flow hf'='git flow hotfix finish'
