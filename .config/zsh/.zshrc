@@ -3,7 +3,7 @@
 # zmodload zsh/datetime
 # setopt PROMPT_SUBST
 # PS4='+$EPOCHREALTIME %N:%i> '
-# exec 3>&2 2> $HOME/tmp.log
+# exec 3>&2 2> $HOME/xtrace.log
 # setopt XTRACE
 
 () {

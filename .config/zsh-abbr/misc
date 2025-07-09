@@ -8,10 +8,10 @@ abbr 'md'='mkdir'
 abbr 'mp'='mkdir -p'
 
 abbr 'zi'='zinit'
-abbr 'zu'='zinit update -a -q%'
-abbr 'zinit rp'='zinit report%'
-abbr 'zinit tm'='zinit times%'
+abbr 'zu'='zinit update -q%'
 abbr 'zinit up'='zinit update -a -q%'
+abbr 'zinit tm'='zinit times -a%'
+abbr 'zinit rp'='zinit report'
 
 abbr 'ez'='exec zsh%'
 

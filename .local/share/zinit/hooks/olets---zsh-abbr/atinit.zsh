@@ -7,7 +7,7 @@
     data_file=$data_dir/current
     [[ -d $config_dir ]] || return
     [[ -d $data_dir ]] || mkdir -p $data_dir || return
-    [[ ! -f $data_file ]] || rm $data_file || return
+    [[ ! -f $data_file ]] || print -n > $data_file || return
 
     # if [[ $OSTYPE == linux-android ]] {
     #     case ${${(s:/:)PREFIX}[3]} {
