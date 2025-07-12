@@ -16,12 +16,12 @@ alias genact='clear && genact'
 alias cman='man -M /usr/share/man/zh_CN'
 
 # The following aliases are designed for WSL
-if (( ${+commands[wsl.exe]} )) {
-    # alias shutdown='shutdown.exe'
-    alias adb='adb.exe'
-    alias fastboot='fastboot.exe'
-    alias wsl='wsl.exe'
-    alias ipconfig='ipconfig.exe'
+if (( ${+WSL_DISTRO_NAME} )) {
+    # alias shutdown='/mnt/c/Windows/system32/shutdown.exe'
+    alias adb='/mnt/c/Program Files/Android/Sdk/platform-tools/adb.exe'
+    alias fastboot='/mnt/c/Program Files/Android/Sdk/platform-tools/fastboot.exe'
+    alias wsl='/mnt/c/Windows/system32/wsl.exe'
+    alias ipconfig='/mnt/c/Windows/system32/ipconfig.exe'
 }
 
 alias java8='/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java'
